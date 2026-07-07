@@ -15,7 +15,7 @@
     </p>
     <div>
 <h2>Formulario de cadastro de tendencias</h2>
-<form oninput="resultadoNota. value= notaEstilo.value">
+<form oninput="resultadoNota" value= "notaEstilo.value">
     <p>
     <label for="nome">Nome Completo</label>
     <input type="text" id="nome" name="nome"placeholder="ex.mc pipinho">
@@ -28,13 +28,15 @@
     <input type="date" id="data-nasc"name="data-nacs>"
     <p></p>
     <label>quais esportes e lazer voce pratica?(marque quantos quiser)</label><br>
-    <input type="checkbox" is="eps1" name="esports" value="futebol"
+    <input type="checkbox" is="esp1" name="esports" value="futebol"
     <label for="esp1">futebol de campo</label>
 <input type="checkbox" id="esp1" name="esports" value="skate "
 <label for="esp2">skate/patins</label><br>
-<input type="checkbox" id="eps1" name="esports" value="basquete
+<input type="checkbox" id="esp3" name="esports" value="basquete"
 <label for="esp3">basquete</label><br>
-</p>
+ <input type="checkbox" id="esp4" name="esports" value="baseball" 
+ <label for="esp4">baseball<label><br>
+</p>  
 <label for="marca">qual marca de roupa ou tenis voce gosta?</label><br>
 <input list="marca-list" id="marca" name="marca" placeholder="digite ou selecione...">
 
@@ -43,11 +45,26 @@
 <option value="nike">  
 <option value="adidas">
 <option value="puma">
-</p>
-
+</datalist><p><br>
 <label for="instituicao">onde voce foca seus estudos atualmente</label><br>
 <select id="instituicao" name="instituicao"></select>
+</p>
+<label for="acessorios">quais acessorios completam o seu look?<label><br>
+    <select> id="acessorios" name="acessorios" multiple size="4">
+    <option value="relogio">relogio</option>
+    <select>id="acessorios">colar>/option>
+    <option value="colar">colar</option>
+    <p><br>
+        <label for="notaEstilo>de 0 a 10 quanto a moda representa a sua identidade ?</label><br>
+        <input type="range" id="notaEstilo" name="notaEstilo" min="0" max="10" value="5"<br>
+    </spam>nota selecionada:<outpot name="notaEstilo">5</output>
+</span> 
+
+<p>
+    <button type="submite">enviar</button><br>
+    <button type="reset">limpar formulario</button>
+    </p>
  </div>
 </body>
 </html>
-</forms><P>
+</forms>
